@@ -1,5 +1,5 @@
 # Pen-Pal-Society
-# Pen Pal Society Site  <!--[![Netlify Status](https://api.netlify.com)](https://app.netlify.com)-->
+## Pen Pal Society Site  <!--[![Netlify Status](https://api.netlify.com)](https://app.netlify.com)-->
 <!-- update the netlify badge above with your own badge that you can find at netlify under settings/general#status-badges -->
 
 Given a pen pal is done writing a letter
