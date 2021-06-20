@@ -25,11 +25,11 @@ PLACE CODE SNIPPET HERE
 ## Features <!-- List your app features using bullets! Do NOT use a paragraph. No one will read that! -->
 Things the user will be able to do on this site.
 
-- [Choose an author]
-- [Choose an recipiente]
-- [Choose a letter topic]
-- [Enter the letter body]
-- [Save letter]
+- Choose an author
+- Choose an recipiente
+- Choose a letter topic
+- Enter the letter body
+- Save letter
 
 ## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
 
