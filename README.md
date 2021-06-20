@@ -26,7 +26,7 @@ PLACE CODE SNIPPET HERE
 Things the user will be able to do on this site.
 
 - Choose an author
-- Choose an recipiente
+- Choose an recipient
 - Choose a letter topic
 - Enter the letter body
 - Save letter
