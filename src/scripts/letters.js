@@ -2,5 +2,18 @@ import { getRequest } from "./dataAccess.js";
 
 export const Letters = () => {
   const letters = getRequest()
-  let html =``
+  let html =`
+    ${letters.map(letter => {
+      return `
+      Dear ${letter.recipient},
+
+      ${letter.body}
+
+      Sincerly ${letter.author}
+
+      ${}
+      `
+    })}
+    
+  `
 }
