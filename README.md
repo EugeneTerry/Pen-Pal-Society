@@ -8,11 +8,11 @@ Then the letter should be saved in the API database
 And the new letter should immediately be rendered in the list of letters below the form
 And the rendered letter should display the following information
 
-- [author]
-- [recipient]
-- [date sent]
-- [email address of author/recipient]
-- [topic of letter]
+- author
+- recipient
+- date sent
+- email address of author/recipient
+- topic of letter
 
  [View App](#your-link)
 
