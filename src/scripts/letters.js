@@ -1,19 +1,20 @@
-import { getRequest } from "./dataAccess.js";
+import { getRequests } from "./dataAccess.js"
 
 export const Letters = () => {
-  const letters = getRequest()
+  const letters = getRequests()
   let html =`
-    ${letters.map(letter => {
-      return `
-      Dear ${letter.recipient},
+    <ul>
+      ${letters.map(letter => {
+        return `
+          Dear ${letter.recipient},
 
-      ${letter.body}
+          ${letter.body}
 
-      Sincerly ${letter.author}
-
-      ${}
-      `
-    })}
-    
+          Sincerly ${letter.author}
+          `
+        }).join("")
+      }
+    </ul>
   `
+return html
 }

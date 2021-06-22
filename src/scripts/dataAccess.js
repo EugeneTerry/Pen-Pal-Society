@@ -5,7 +5,7 @@ const applicationState = {
 const API = "http://localhost:8088"
 
 export const fetchRequest = () => {
-  return fetch(`${API} /letters`)
+  return fetch(`${API}/letters`)
   .then(response => response.json())
   .then(
     (letterRequest) => {
@@ -13,8 +13,9 @@ export const fetchRequest = () => {
     }
   )
 }
-export const getRequest = () => {
-  return applicationState.letters.map(letter => ({...applicationState.letter}));
+
+export const getRequests = () => {
+  return applicationState.letters.map(letter => ({...letter}));
 }
 
 export const sendLetterRequest = (userLetterRequest) => {

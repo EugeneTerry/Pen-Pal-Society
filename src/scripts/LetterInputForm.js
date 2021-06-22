@@ -21,15 +21,15 @@ mainContainer.addEventListener("click", clickEvent => {
 
 export const LetterInputForm = () => {
   let html = `
-      <div class="field">
+    <div class="field">
       <label class = "label"
-      for = "letterAuthor">Author</label>
-      <select id = "authorSelection" class = "select">
-        <option vaule ="stephenKing">Stephen King</option>
-        <option vaule ="markTwain">Mark Twain</option>
-        <option vaule ="jamesBaldwin">James Baldwin</option>
-        <option vaule ="mayaAngelou">Maya Angelou</option>
-      </select>
+        for = "letterAuthor">Author</label>
+          <select id = "authorSelection" class = "select">
+            <option vaule ="stephenKing">Stephen King</option>
+            <option vaule ="markTwain">Mark Twain</option>
+            <option vaule ="jamesBaldwin">James Baldwin</option>
+            <option vaule ="mayaAngelou">Maya Angelou</option>
+          </select>
     </div>
     <div class="field">
       <label class = "label"
@@ -39,13 +39,23 @@ export const LetterInputForm = () => {
     <div class="field">
       <label class = "label"
         for = "letterTopic">Topic</label>
-          <input type="checkbox" id = "letterTopic" name= "business" value= "Business"/>Business
-          <input type="checkbox" id = "letterTopic" name= "friendly" value= "Friendly"/>Friendly
-          <input type="checkbox" id = "letterTopic" name= "business" value= "Business"/>Business
-          <input type="checkbox" id = "letterTopic" name= "congratulations" value= "Congratulations"/>Congratulations
-          <input type="checkbox" id = "letterTopic" name= "condolences" value= "Condolences"/>Condolences
+          <input type="radio" id = "letterTopic" name= "business" value= "Business"/>Business
+          <input type="radio" id = "letterTopic" name= "friendly" value= "Friendly"/>Friendly
+          <input type="radio" id = "letterTopic" name= "family" value= "Business"/>Family
+          <input type="radio" id = "letterTopic" name= "congratulations" value= "Congratulations"/>Congratulations
+          <input type="radio" id = "letterTopic" name= "condolences" value= "Condolences"/>Condolences
         </label>
       </div>
+      <div class="field">
+      <label class = "label"
+        for = "letterrecipient">Recipient</label>
+          <select id = "authorSelection" class = "select">
+            <option vaule ="stephenKing">Stephen King</option>
+            <option vaule ="markTwain">Mark Twain</option>
+            <option vaule ="jamesBaldwin">James Baldwin</option>
+            <option vaule ="mayaAngelou">Maya Angelou</option>
+          </select>
+    </div>
       <button id = "sendLetter">Send Letter</button>
     `
     return html;
