@@ -3,27 +3,29 @@ import { sendLetterRequest } from "./dataAccess.js";
 const mainContainer= document.querySelector("#container")
 
 mainContainer.addEventListener("click", clickEvent => {
-  if (clickEvent.targetid === "sendLetter") {
-    const userAuthor = document.querySelector("input[name='letterAuthor']").value
-    const userBody = document.querySelector("input[name='letterBody']").value
+  if (clickEvent.target.id === "sendLetter") {
+    const theSelectedAuthor = document.getElementById("authorSelection").options.selectedIndex
+    const userSelectedAuthor = document.getElementById("authorSelection").options[theSelectedAuthor].text
+    const userBody = document.querySelector("textarea[name='letterBody']").value
     const userTopic = document.querySelector("input[name='letterTopic']").value
-    const userRecipient = document.querySelector("input[name='letterRecipient']").value
+    const theSelectedRecipient = document.getElementById("recipientSelection").options.selectedIndex
+    const userselectedRecipient = document.getElementById("recipientSelection").options[theSelectedRecipient].text
     
     const dataToSendToAPI = {
-      author: userAuthor,
+      author: userSelectedAuthor,
       body: userBody,
       topic: userTopic,
-      recipient: userRecipient
+      recipient: userselectedRecipient
     }
     sendLetterRequest(dataToSendToAPI);
   }
 })
 
 export const LetterInputForm = () => {
-  let html = `
+  let html = `<h3>Author</h3>
     <div class="field">
       <label class = "label"
-        for = "letterAuthor">Author</label>
+        for = "letterAuthor"></label>
           <select id = "authorSelection" class = "select">
             <option vaule ="stephenKing">Stephen King</option>
             <option vaule ="markTwain">Mark Twain</option>
@@ -31,25 +33,28 @@ export const LetterInputForm = () => {
             <option vaule ="mayaAngelou">Maya Angelou</option>
           </select>
     </div>
+    <h3>Letter</h3>
     <div class="field">
       <label class = "label"
-      for = "letterBody">Letter</label>
+      for = "letterBody"></label>
       <textarea name = "letterBody" cols="50" rows="10"></textarea>
     </div>
-    <div class="field">
+    <h3>Topic</h3>
+    <div class="topic">
       <label class = "label"
-        for = "letterTopic">Topic</label>
-          <input type="radio" id = "letterTopic" name= "business" value= "Business"/>Business
-          <input type="radio" id = "letterTopic" name= "friendly" value= "Friendly"/>Friendly
-          <input type="radio" id = "letterTopic" name= "family" value= "Business"/>Family
-          <input type="radio" id = "letterTopic" name= "congratulations" value= "Congratulations"/>Congratulations
-          <input type="radio" id = "letterTopic" name= "condolences" value= "Condolences"/>Condolences
+        for = "letterTopic"></label>
+          <input type="radio" id = "letterTopic" name= "letterTopic" value= "Business"/>Business
+          <input type="radio" id = "letterTopic" name= "letterTopic" value= "Friendly"/>Friendly
+          <input type="radio" id = "letterTopic" name= "letterTopic" value= "Business"/>Family
+          <input type="radio" id = "letterTopic" name= "letterTopic" value= "Congratulations"/>Congratulations
+          <input type="radio" id = "letterTopic" name= "letterTopic" value= "Condolences"/>Condolences
         </label>
       </div>
+      <h3>Recipient</h3>
       <div class="field">
       <label class = "label"
-        for = "letterrecipient">Recipient</label>
-          <select id = "authorSelection" class = "select">
+        for = "letterrecipient"></label>
+          <select id = "recipientSelection" class = "select">
             <option vaule ="stephenKing">Stephen King</option>
             <option vaule ="markTwain">Mark Twain</option>
             <option vaule ="jamesBaldwin">James Baldwin</option>

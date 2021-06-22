@@ -8,8 +8,8 @@ export const PenPals = () => {
     ${LetterInputForm()}
     </section>
 
+    <h2>Letter</h2>
     <section class="letterRequests">
-          <h2>Letter</h2>
           <article class = "request">
           ${Letters()}
           </article>

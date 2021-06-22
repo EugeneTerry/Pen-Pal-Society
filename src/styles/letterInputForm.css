@@ -1,0 +1,17 @@
+.field {
+  display:flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+
+.letterRequests {
+  background-color: rgba(137, 43, 226, 0.329);
+  padding: 3px;
+  margin-top: 12px;
+}
+
+.topicButton {
+  border-radius: 20%;
+  box-shadow: 5px 5px 1px rgba(59, 58, 58, 0.726);
+}

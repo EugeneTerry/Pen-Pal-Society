@@ -19,7 +19,7 @@ export const getRequests = () => {
 }
 
 export const sendLetterRequest = (userLetterRequest) => {
-  const fetchOption = {
+  const fetchOptions = {
     method: "POST",
     headers : {
       "Content-Type": "application/json"
