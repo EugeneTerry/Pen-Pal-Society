@@ -27,17 +27,18 @@ export const LetterInputForm = () => {
       <label class = "label"
         for = "letterAuthor"></label>
           <select id = "authorSelection" class = "select">
-            <option vaule ="stephenKing">Stephen King</option>
-            <option vaule ="markTwain">Mark Twain</option>
-            <option vaule ="jamesBaldwin">James Baldwin</option>
-            <option vaule ="mayaAngelou">Maya Angelou</option>
+          <option selected disabled>--Choose Author--</option>
+            <option vaule ="stephenKing">Stephen King  (Stephen@King.com)</option>
+            <option vaule ="markTwain">Mark Twain  (Mark@Twain.net)</option>
+            <option vaule ="jamesBaldwin">James Baldwin  (James@Baldwin.org)</option>
+            <option vaule ="mayaAngelou">Maya Angelou  (Maya@Angelou.gov)</option>
           </select>
     </div>
     <h3>Letter</h3>
     <div class="field">
       <label class = "label"
       for = "letterBody"></label>
-      <textarea name = "letterBody" cols="50" rows="10"></textarea>
+      <textarea class = "paragraph" name = "letterBody" cols="50" rows="10"></textarea>
     </div>
     <h3>Topic</h3>
     <div class="topic">
@@ -55,10 +56,11 @@ export const LetterInputForm = () => {
       <label class = "label"
         for = "letterrecipient"></label>
           <select id = "recipientSelection" class = "select">
-            <option vaule ="stephenKing">Stephen King</option>
-            <option vaule ="markTwain">Mark Twain</option>
-            <option vaule ="jamesBaldwin">James Baldwin</option>
-            <option vaule ="mayaAngelou">Maya Angelou</option>
+          <option selected disabled>--Choose Recipient--</option>
+            <option vaule ="stephenKing">Stephen King  (Stephen@King.com)</option>
+            <option vaule ="markTwain">Mark Twain  (Mark@Twain.net)</option>
+            <option vaule ="jamesBaldwin">James Baldwin  (James@Baldwin.org)</option>
+            <option vaule ="mayaAngelou">Maya Angelou  (Maya@Angelou.gov)</option>
           </select>
     </div>
       <button id = "sendLetter">Send Letter</button>
