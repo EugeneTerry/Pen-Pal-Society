@@ -7,7 +7,7 @@ mainContainer.addEventListener("click", clickEvent => {
     const theSelectedAuthor = document.getElementById("authorSelection").options.selectedIndex
     const userSelectedAuthor = document.getElementById("authorSelection").options[theSelectedAuthor].text
     const userBody = document.querySelector("textarea[name='letterBody']").value
-    const userTopic = document.querySelector("input[name='letterTopic']").value
+    const userTopic = document.querySelector("input[name='letterTopic']:checked").value
     const theSelectedRecipient = document.getElementById("recipientSelection").options.selectedIndex
     const userselectedRecipient = document.getElementById("recipientSelection").options[theSelectedRecipient].text
     

@@ -27,7 +27,6 @@ export const sendLetterRequest = (userLetterRequest) => {
     body: JSON.stringify(userLetterRequest)
   }
   return fetch(`${API}/letters`, fetchOptions)
-  .then(response => response.json())
   .then(() => {
     document.dispatchEvent(new CustomEvent("stateChanged"))
     }

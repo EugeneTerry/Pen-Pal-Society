@@ -3,7 +3,10 @@ import { Letters } from "./letters.js";
 
 export const PenPals = () => {
   return `
-    <h1>Pen Pal Society</h1> 
+  <header class="header">
+    <img src="./images/PenPal.png" class="logo" />
+    <h1>Pen Pal Society</h1>
+  </header>
     <section class = "letterInputForm">
     ${LetterInputForm()}
     </section>

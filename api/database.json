@@ -1,5 +1,11 @@
 {
   "letters": [
-    
+    {
+      "author": "Mark Twain (Mark@Twain.net)",
+      "body": "Never argue with an idiot. They will drag you down and beat you with ignorance.",
+      "topic": "Congratulations",
+      "recipient": "Maya Angelou (Maya@Angelou.gov)",
+      "id": 1
+    }
   ]
 }
